@@ -6,7 +6,7 @@
     "containerDefinitions": [
         {
             "name": "ecs-doggy-sandbox",
-            "image": "184121542536.dkr.ecr.ap-southeast-1.amazonaws.com/doggy_repo:70c8c4c96dce593449638e4db1a8ad0c95e3eb61",
+            "image": "184121542536.dkr.ecr.ap-southeast-1.amazonaws.com/doggy_repo:${{ github.sha }}",
             
             "resourceRequirements": null,
             "essential": true,
@@ -23,7 +23,7 @@
     "networkMode": "awsvpc",
     "memory": "512",
     "cpu": "256",
-    "executionRoleArn": "arn:aws:iam::184121542536:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+    "executionRoleArn": "arn:aws:iam::184121542536:role/ecsTaskExecutionRole",
     "family": "ecs-doggy-sandbox-task-definition",
     "taskRoleArn": "",
     "placementConstraints": []
