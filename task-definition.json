@@ -6,7 +6,7 @@
     "containerDefinitions": [
         {
             "name": "ecs-doggy-sandbox",
-            "image": "317047489192.dkr.ecr.ap-southeast-1.amazonaws.com/doggy_repo:942e07b58f50bdcf55c05d35e1e486e9f5e005e1",
+            "image": "317047489192.dkr.ecr.ap-southeast-1.amazonaws.com/doggy_repo:lastest",
             
             "resourceRequirements": null,
             "essential": true,
